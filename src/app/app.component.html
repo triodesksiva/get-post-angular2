@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <table class="table table-hover table-dark mx-auto">
+        <thead>
+            <tr>
+                <th class="text-center" colspan="4">Student Details</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Degree</th>
+                <th>College</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of GetStudent">
+                <td>{{student.Name}}</td>
+                <td>{{student.Age}}</td>
+                <td>{{student.Degree}}</td>
+                <td>{{student.College}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <a routerLink='/input'>Go To Student Register</a>
+    <router-outlet></router-outlet>
+</div>

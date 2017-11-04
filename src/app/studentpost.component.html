@@ -1,0 +1,33 @@
+<div class="container">
+    <form #studentForm="ngForm" (ngSubmit)='putstudent(studentForm.value)'>
+        <table class="table table-hover table-dark mx-auto">
+            <thead>
+                <tr class="text-center">
+                    <th class="text-center" colspan="2">Student Register</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center my-2">
+                    <td class="text-right">Name</td>
+                    <td><input type="text" class="name" name="Name" ngModel></td>
+                </tr>
+                <tr class="text-center my-2">
+                    <td class="text-right">Age</td>
+                    <td><input type="number" class="age" name="Age" ngModel></td>
+                </tr>
+                <tr class="text-center my-2">
+                    <td class="text-right">Degree</td>
+                    <td><input type="text" class="degree" name="Degree" ngModel></td>
+                </tr>
+                <tr class="text-center my-2">
+                    <td class="text-right">College</td>
+                    <td><input type="text" class="colege" name="College" ngModel></td>
+                </tr>
+                <tr class="text-center my-2">
+
+                    <td colspan="2"><input type="submit" class="colege btn btn-primary" name="colege" value="save"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
